@@ -122,24 +122,10 @@ for (let i = 0; i < aIndeces.length; i++) {
 
     if (found === 2) {
         x_mas_count++
-        if (i % 10 === 0) {
-
-            printXMAS(currentARow, currentACol)
-        }
     }
 
 
 }
 
-function printXMAS(currentXRow, currentXCol) {
-    const firstRow = inputArray[currentXRow - 1]?.slice(currentXCol - 1, currentXCol + 2) ?? []
-    const secondRow = inputArray[currentXRow]?.slice(currentXCol - 1, currentXCol + 2) ?? []
-    const thirdRow = inputArray[currentXRow + 1]?.slice(currentXCol - 1, currentXCol + 2) ?? []
-    console.log("====")
-    console.log(firstRow)
-    console.log(secondRow)
-    console.log(thirdRow)
-    console.log("====")
-}
 
 console.log("X-MAS found ", x_mas_count)
